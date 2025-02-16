@@ -11,7 +11,7 @@ from tensorflow.keras.layers import Dense, Flatten
 from tensorflow.keras.datasets import mnist
 
 app = Flask(__name__)
-CORS(app)  # This enables CORS for all routes
+CORS(app, supports_credentials=True)
 
 MODEL_PATH = "mnist_model.h5"
 
