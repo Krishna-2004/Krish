@@ -60,6 +60,7 @@ const DigitDraw = () => {
       const response = await fetch('https://mnistbackend-3j31.onrender.com/predict', {
     //   const response = await fetch('http://localhost:5000/predict', {
         method: 'POST',
+        mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ image: imageData }),
       });
