@@ -57,8 +57,8 @@ const DigitDraw = () => {
 
     try {
       // Replace the URL below with your backend's URL (e.g., https://your-backend-app.onrender.com/predict)
-    //   const response = await fetch('https://your-backend-url/predict', {
-      const response = await fetch('http://localhost:5000/predict', {
+      const response = await fetch('https://mnistbackend-3j31.onrender.com/predict', {
+    //   const response = await fetch('http://localhost:5000/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ image: imageData }),
